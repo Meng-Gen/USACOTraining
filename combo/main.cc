@@ -18,7 +18,6 @@ int GetOverlapCount(int x, int y, int N) {
     }
 
     int count = 0;
-    std::set<unsigned long>::iterator it;
     for (set<int>::iterator it = y_overlap.begin(); it != y_overlap.end(); ++it) {
         if (x_overlap.find(*it) != x_overlap.end()) {
             count++;
